@@ -47,7 +47,7 @@ function nextSequence(){
 }
 
 function PlaySound(name){
-    var audio  = new Audio("sounds/"+name+".mp3");
+    var audio  = new Audio("name+".mp3");
     audio.play();
 }
 
@@ -67,7 +67,7 @@ function GameOver(){
     setTimeout(() =>{
         $("body").removeClass("game-over");
     },100);
-    var audio  = new Audio("sounds/wrong.mp3");
+    var audio  = new Audio("wrong.mp3");
     audio.play();
     $("h1").text("Press A Key to Start");
     StartOver();
